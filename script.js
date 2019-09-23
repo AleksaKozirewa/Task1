@@ -8,13 +8,16 @@
 		localStorage.setItem("users", JSON.stringify(users));
 	}
 
-	function getUsers() {
+	/*function getUsers() {
 		return JSON.parse(localStorage.getItem("users") || "[]");
-    }
+	}*/
+	
+import getUsers from './getUsers.js';
+getUsers();
 
 	function outputUsers() {
     const users         = getUsers();
-    users.sort(function SortUsers(a, b) {
+    users.sort(function (a, b) {
         return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
     });
 		if (!users.length) {
