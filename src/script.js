@@ -8,12 +8,12 @@
 		localStorage.setItem("users", JSON.stringify(users));
 	}
 
-	/*function getUsers() {
+	function getUsers() {
 		return JSON.parse(localStorage.getItem("users") || "[]");
-	}*/
+	}
 	
-import getUsers from './getUsers.js';
-getUsers();
+/*import getUsers from './getUsers.js';
+getUsers();*/
 
 	function outputUsers() {
     const users         = getUsers();
